@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERP Rank Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <h1>SERP Rank Tracker</h1>
+            </div>
+            <p class="subtitle">Track rankings • Generate HTML reports</p>
+        </header>
+
+        <!-- Main Form -->
+        <div class="form-section">
+            <!-- Website Selection -->
+            <div class="form-group">
+                <label for="website">
+                    <span class="icon">🌐</span>
+                    Select Website
+                </label>
+                <select id="website" class="select-field">
+                    <option value="">Choose a website...</option>
+                    <option value="flycart.org" data-name="Flycart">🛒 Flycart</option>
+                    <option value="retainful.com" data-name="Retainful">📧 Retainful</option>
+                    <option value="wployalty.net" data-name="WPLoyalty">🎁 WPLoyalty</option>
+                    <option value="upsellwp.com" data-name="UpsellWP">⬆️ UpsellWP</option>
+                    <option value="sparkeditor.com" data-name="SparkEditor">✨ Spark Editor</option>
+                    <option value="afflr.io" data-name="Afflr">🤝 Afflr</option>
+                    <option value="wprelay.com" data-name="Relay">🔄 Relay</option>
+                    <option value="yuko.so" data-name="Yuko">🎯 Yuko</option>
+                </select>
+            </div>
+
+            <!-- Keywords Input -->
+            <div class="form-group">
+                <label for="keywords">
+                    <span class="icon">🔑</span>
+                    Keywords (one per line, max 10)
+                </label>
+                <textarea 
+                    id="keywords" 
+                    rows="6" 
+                    placeholder="woocommerce plugin&#10;cart abandonment&#10;loyalty program"
+                    class="textarea-field"
+                ></textarea>
+                <p class="help-text"><span id="keywordCount">0</span>/10 keywords</p>
+            </div>
+
+            <!-- Country Selection -->
+            <div class="form-group">
+                <label>
+                    <span class="icon">🌍</span>
+                    Select Countries (up to 5)
+                </label>
+                <div class="checkbox-grid">
+                    <label class="checkbox-item">
+                        <input type="checkbox" value="us" data-name="United States">
+                        <span class="checkbox-label">
+                            <span class="flag">🇺🇸</span>
+                            <span>United States</span>
+                        </span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" value="uk" data-name="United Kingdom">
+                        <span class="checkbox-label">
+                            <span class="flag">🇬🇧</span>
+                            <span>United Kingdom</span>
+                        </span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" value="ca" data-name="Canada">
+                        <span class="checkbox-label">
+                            <span class="flag">🇨🇦</span>
+                            <span>Canada</span>
+                        </span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" value="in" data-name="India">
+                        <span class="checkbox-label">
+                            <span class="flag">🇮🇳</span>
+                            <span>India</span>
+                        </span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" value="de" data-name="Germany">
+                        <span class="checkbox-label">
+                            <span class="flag">🇩🇪</span>
+                            <span>Germany</span>
+                        </span>
+                    </label>
+                </div>
+                <p class="help-text"><span id="countryCount">0</span>/5 countries selected</p>
+            </div>
+
+            <!-- Search Depth -->
+            <div class="form-group">
+                <label for="searchDepth">
+                    <span class="icon">🔍</span>
+                    Search Depth
+                </label>
+                <select id="searchDepth" class="select-field">
+                    <option value="10" selected>Top 10 Results</option>
+                    <option value="20">Top 20 Results</option>
+                    <option value="30">Top 30 Results</option>
+                    <option value="50">Top 50 Results</option>
+                    <option value="100">Top 100 Results</option>
+                </select>
+            </div>
+
+            <!-- Check Button -->
+            <button id="checkBtn" class="check-btn">
+                <span class="btn-text">Check Rankings</span>
+            </button>
+        </div>
+
+        <!-- Status Section -->
+        <div id="statusSection" class="status-section hidden">
+            <div class="status-header">
+                <h3>🔍 Checking Rankings...</h3>
+                <button id="cancelBtn" class="cancel-btn">Cancel</button>
+            </div>
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <div id="statusText" class="status-text">Initializing...</div>
+            <div id="statusDetails" class="status-details"></div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p class="footer-text">Built for marketers • Results open in new tab</p>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
