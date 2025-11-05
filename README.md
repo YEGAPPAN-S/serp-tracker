@@ -234,10 +234,10 @@ A: No, if you follow best practices (5-10 keywords, wait between runs).
 
 ## 📝 Version Info
 
-**Version:** 1.0.0 Final
-**Release:** November 2025
-**Built for:** Marketers tracking specific websites
-**Output:** HTML reports (no Google Sheets required)
+- **Version:** 1.0.0 Final
+- **Release:** November 2025
+- **Built for:** Marketers tracking specific websites
+- **Output:** HTML reports (no Google Sheets required)
 
 ---
 
