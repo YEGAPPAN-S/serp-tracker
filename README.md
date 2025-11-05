@@ -13,7 +13,7 @@ Tracks your website rankings in Google search across multiple countries and gene
 ## 🚀 Quick Setup (5 Minutes)
 
 ### Step 1: Extract Files
-- Unzip `serp-tracker-final.zip`
+- Unzip `serp-tracker.zip`
 - Place in a permanent location
 
 ### Step 2: Load Extension
@@ -21,7 +21,7 @@ Tracks your website rankings in Google search across multiple countries and gene
 2. Go to `chrome://extensions/`
 3. Enable "Developer mode" (top-right toggle)
 4. Click "Load unpacked"
-5. Select the `serp-tracker-final` folder
+5. Select the `serp-tracker` folder
 6. Done!
 
 ---
@@ -41,14 +41,14 @@ Tracks your website rankings in Google search across multiple countries and gene
 
 ## 🎯 Your 8 Websites
 
-- 🛒 Flycart (flycart.com)
+- 🛒 Flycart (flycart.org)
 - 📧 Retainful (retainful.com)
 - 🎁 WPLoyalty (wployalty.net)
 - ⬆️ UpsellWP (upsellwp.com)
-- ✨ SparkEditor (sparkeditor.io)
-- 🤝 Afflr (afflr.com)
-- 🔄 Relay (relay.app)
-- 🎯 Yuko (yuko.app)
+- ✨ SparkEditor (sparkeditor.com)
+- 🤝 Afflr (afflr.io)
+- 🔄 Relay (wprelay.com)
+- 🎯 Yuko (yuko.so)
 
 ---
 
@@ -173,16 +173,15 @@ Result: Opens HTML report showing:
 
 ```
 serp-tracker-final/
-├── manifest.json          # Extension config
+├── manifest.json         # Extension config
 ├── popup.html            # User interface
 ├── popup.js              # Main logic
 ├── background.js         # Ranking checker
 ├── content.js            # Search page script
 ├── styles.css            # Styling
 ├── icons/
-│   ├── icon16.png       # Toolbar icon
-│   ├── icon48.png       # Extension icon
-│   └── icon128.png      # Store icon
+│   ├── icon.png       # Toolbar icon # Extension icon # Store icon
+│   ├── favicon.ico    # Result page Fav Icon
 └── README.md            # This file
 ```
 
@@ -190,15 +189,15 @@ serp-tracker-final/
 
 ## 💯 Key Features
 
-✅ **8 pre-configured websites** (dropdown selection)
-✅ **5 countries** (checkbox selection)
-✅ **Up to 10 keywords** per check
-✅ **Up to 100 results** (multi-page scraping)
-✅ **HTML report** (opens in new tab)
-✅ **Color-coded badges** (instant visual feedback)
-✅ **Professional design** (marketer-friendly)
-✅ **No Google Sheets** (simple HTML output)
-✅ **No configuration** (just install and use)
+- ✅ **8 pre-configured websites** (dropdown selection)
+- ✅ **5 countries** (checkbox selection)
+- ✅ **Up to 10 keywords** per check
+- ✅ **Up to 100 results** (multi-page scraping)
+- ✅ **HTML report** (opens in new tab)
+- ✅ **Color-coded badges** (instant visual feedback)
+- ✅ **Professional design** (marketer-friendly)
+- ✅ **No Google Sheets** (simple HTML output)
+- ✅ **No configuration** (just install and use)
 
 ---
 
